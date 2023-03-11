@@ -35,14 +35,16 @@
 <h3>Если &lt;условие&gt; <em>ложно</em>, пропустить &lt;блок 1&gt;, а выполнить &lt;блок 2&gt;</h3>
 <p><img alt="pic" src="./images/python-in-russian-if-else-body.png"></p>
 <p>Например, для такого кода:</p>
-<pre><code>x = -5
-if x < 0:
-    print("x - отрицательное число")
+<pre><code>x = 4
+y = 5
+if x < y and (not 3 != x or 1 >= 0):
+    z = "AVRORA"
 else:
-    print("x - неотрицательное число")</code></pre>
+    z = "MARS"
+print(z)</code></pre>
 
 <p>Результат работы будет такой:</p>
-<pre><code>x - отрицательное число</code></pre>
+<pre><code>AVRORA</code></pre>
 
 <h1>Три разновидности программного кода в задачах ОГЭ</h1>
 <p><img alt="pic" src="./images/evich2021-task6-3kinds.jpg"></p>
