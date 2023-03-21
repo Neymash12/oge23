@@ -45,18 +45,18 @@
 26
 27
 0</code></pre>
-Sample Output:<pre><code>
-4</code></pre></p>
-<h3>Решение:<pre><code>i = 0</h3>
-<p>n = 1
-z = 0
+Sample Output:</p>
+<pre><code>4</code></pre>
+
+<h3>Решение:</h3>
+<pre><code>z = 0
+n = -1
 while n != 0:
-  i += 1
-  n = int(input('Введите следующее число:'))
-  if (n % 5 == 0) or (n % 9 == 0):
-    z += 1
-print(z)
-</code></pre></p>
+    n = int(input('Введите следующее число:'))
+    if (n > 0) and (n % 5 == 0 or n % 9 == 0):
+        z += 1
+print(z)</code></pre>
+
 <h2>4.1.2</h2>
 <p>Напишите программу, которая в последовательности натуральных чисел 
 определяет максимальное число, оканчивающееся на 3. 
@@ -69,16 +69,17 @@ print(z)
 53
 13
 46</code></pre>
-Sample Output:<pre><code>
-53</code></pre></p>
-<h3>Решение:<pre><code></h3>
-<p>n = int(input('Введите количество чисел:'))
-z = 0
+Sample Output:</p>
+<pre><code>53</code></pre>
+
+<h3>Решение:</h3>
+<pre><code>z = 0
+n = int(input('Введите количество чисел:'))
 for i in range(1, n + 1):
-  a = int(input('Введите ' + str(i) + '-е число:'))
-  if (a % 10 == 3) and (a &gt; z):
-    z = a
-print(z)</code></pre></p>
+    x = int(input('Введите ' + str(i) + '-е число:'))
+    if (x % 10 == 3) and (x > z):
+        z = x
+print(z)</code></pre>
 
 <p align="center"><a href="#">on the top</a></p>
     </div>
