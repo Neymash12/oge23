@@ -63,7 +63,7 @@
 <p>То есть переменная меняет значение, когда её <em>"переклеивают"</em> с одного значения на другое:
 <img alt="pic" src="./images/fruits-with-labels.png"></p>
 <h1>Рассмотрим это подробнее на примере языка Пайтон!</h1>
-<h2>Для наглядности присвоим типам данных цвета:</h2>
+<h2>Пусть - для наглядности - все типы данных имеют свои цвета:</h2>
 <p><img alt="pic" src="./images/python-types-colors.jpg"></p>
 <table>           
 <tr><th>переменные до<th>присваивание<th>переменные после</tr>
@@ -141,33 +141,6 @@ c = (r == t)
 </table>
 
 <div class="highlight"><pre><span></span><code>
-# = list(map(int, t.split()))
-t = "0 1 2 3 4 5 6 7 8 9"	## already sorted list
-t = "9 8 7 6 5 4 3 2 1 0"	## reversed list
-t = "8 1 9 2 7 3 0 5 6 4"	## unsorted list
-l = list(map(int, t.split()))
-n = len(l)
-k = 0
-print(*l)
-for i in range(n - 1):
-	print()
-	for j in range(n - i - 1):  ## range(n - 1); range(n - (i + 1))
-		k += 1
-		print(f"step {k:>2d} (i={i},j={j}):", end=" ")
-		if l[j] > l[j + 1]:
-			print(*l[:j], f"{l[j]}>{l[j+1]}", *l[j+2:], end=" -swap-> ")
-			l[j], l[j + 1] = l[j + 1], l[j]
-			print(*l[:j], f"{l[j]}<{l[j+1]}", *l[j+2:])
-			stop = False
-		else:
-			print(*l[:j], f"{l[j]}<{l[j+1]}", *l[j+2:], end=" ------> ")
-			pass
-			print(*l[:j], f"{l[j]} {l[j+1]}", *l[j+2:])
-			stop = True
-	if stop:
-		break
-print()
-print(*l)
 </code></pre></div>
 
 <p><img alt="pic" src="./images/var-is-not-box-but-is-label.png"></p>
