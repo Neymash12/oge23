@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Урок 25 | ОГЭ 2023 информатика</title>
+  <meta charset="utf-8">
+<!--
+<meta name="description" content="Диктант по Пайтону"><meta name="author" content="andygram">-->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800, must-revalidate" />
+  <link href="./theme/css/screen.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link href="./" type="application/atom+xml" rel="alternate" title="ОГЭ 2023 информатика ATOM Feed" />
+</head>
+<body>
+<div id="outer-wrapper">
+<div id="header-wrapper">
+  <div class="logo"><a href=".">ОГЭ 2023 информатика</a></div>
+  <div class="small"></div>
+    <div class="nav">
+    </div>
+</div>    <div id="main">
+<h2><a href="./lesson-25.html">Урок 25</a></h2>
+<h5><i class="icon-feather"></i> 11.04.2023, Вт
+<i class="icon-bookmarks"></i>
+<span><a href="./tag/lesson.html">lesson</a> / </span>
+</h5>
+
+<h3>Последнее обучающее занятие по пайтону.</h3>
+<p><img alt="pic" src="./images/python-logo-wide-900px.png"></p>
+<h1>Пайтон-диктант</h1>
+<p>Цель:</p>
+<ul>
+<li>закрепить навыки программирования на примере заданий 15-2 ОГЭ</li>
+</ul>
+<p>Порядок работы:</p>
+<ul>
+<li>используем IDLE</li>
+<li>берём одно за другим задание 15-2 (сколько успеем, планирую штук 10-12)</li>
+<li>создаём файл <strong>E2020-Z15-V0x.py</strong> (где x - номер варианта)</li>
+<li>ты пишешь решение под мою диктовку (я могу намеренно вносить ошибки, ты их должен замечать и исправлять)</li>
+<li>доводим решение до правильного ответа, до получения двух баллов</li>
+</ul>
+<style>
+    .py { font-size: 1.5em; }
+    b { color: green; background-color: lightgrey; }
+</style>
+
+<h2>Вариант 1:</h2>
+<p><img alt="pic" src="./images/evich2021-V01-Z15-2.png"></p>
+<h3>Решение:</h3>
+<p>Всегда начинаем с создания переменной для ответа:</p>
+<pre><code class="py" style="font-size: 1.5em;"><b>z = 0</b>
+</code></pre>
+
+<p>Заканчиваем выводом этой переменной на экран:</p>
+<pre><code class="py" style="font-size: 1.5em;">z = 0
+
+<b>print(z)</b>
+</code></pre>
+<p>Считываем количество чисел в переменную k:</p>
+<pre><code class="py" style="font-size: 1.5em;">z = 0
+<b>k = int(input())</b>
+
+print(z)
+</code></pre>
+<p>Пишем заголовок цикла длиной k:</p>
+<pre><code class="py" style="font-size: 1.5em;">z = 0
+k = int(input())
+<b>for i in range(k):</b>
+
+print(z)
+</code></pre>
+<p>Считываем очередное число в переменную n:</p>
+<pre><code class="py" style="font-size: 1.5em;">z = 0
+k = int(input())
+for i in range(k):
+   <b>n = int(input())</b>
+
+print(z)
+</code></pre>
+<p>Пишем пока от балды <span style="color:red">какое-нибудь простое</span> условие
+<br>и увеличиваем счётчик "правильных чисел":</p>
+<pre><code class="py" style="font-size: 1.5em;">z = 0
+k = int(input()
+for i in range(k):
+   n = int(input())
+   <b>if <span style="color:red">(n > 0)</span>:</b>
+      <b>z += 1</b>
+
+print(z)
+</code></pre>
+<p>Программа как бы готова!<br> Осталось запрограммировать "правильное" условие:</p>
+<pre><code class="py" style="font-size: 1.5em;">z = 0
+k = int(input())
+for i in range(k):
+   n = int(input())
+   if <b>(100 <= n <= 999) and (n % 10 == 4)</b>:
+      z += 1
+print(z)
+</code></pre>
+<p>Проверяем работу готовой программы:</p>
+<pre><code class="py" style="font-size: 1.5em;">z = 0
+k = int(input())
+for i in range(k):
+   n = int(input())
+   if (100 <= n <= 999) and (n % 10 == 4):
+      z += 1
+print(z)
+</code></pre>
+<p>Run E2020-Z15-V01.py</p>
+<pre><code class="py">>>>
+=============== RESTART: E2020-Z15-V01.py ===============
+6
+24
+1410
+304
+153
+2084
+514
+2
+>>></code></pre>
+
+<h2>Вариант 20:</h2>
+<p><img alt="pic" src="./images/evich2021-V20-Z15-2.png"></p>
+<h2>Решение:</h2>
+<pre><code class="py" style="font-size: 1.3em;">z = 0             # Всегда начинаем с переменной для ответа
+
+<span style="color:green"><i>(получим x, получим n  и  вычислим z)</i></span>
+
+print(z)          # печатаем ответ
+</code></pre>
+
+<h3>Замечаем, что нам нужно вычислить сумму таких однотипных дробей:</h3>
+<p><img alt="pic" src="./images/evich2021-V20-Z15-3.png"></p>
+<h3>Пишем код:</h3>
+<pre><code class="py" style="font-size: 1.3em;">z = 0
+
+s = input()       <span style="color:green"># input вводит строку с клавиатуры: "5 7"</span>
+x, n = s.split()  <span style="color:green"># split режет строку по пробелам:   "5 7"  ---->  "5","7"</span>
+
+x = int(x)        <span style="color:green"># int преобразует строку в число:   "5"    ---->  5</span>
+n = int(n)        <span style="color:green"># int преобразует строку в число:   "7"    ---->  7</span>
+
+a = 1             <span style="color:green"># пусть у нас в переменной a будет  числитель  дроби</span>
+b = 1             <span style="color:green">#           а в переменной b будет знаменатель дроби</span>
+
+for i in range(1, n+1):     <span style="color:green">#  i:   1     2      3        4        ...</span>
+    a = x ** i              <span style="color:green">#  a:   x     xx     xxx      xxxx     ...</span>
+    b = b * i               <span style="color:green">#  b:   1     1*2    1*2*3    1*2*3*4  ...</span>
+    z = z + a / b           <span style="color:green">#  увеличиваем z на дробь (a / b)</span>
+
+z = round(z, 2)   <span style="color:green"># округляем z</span>
+print(z)
+</code></pre>
+
+<p align="center"><a href="#">on the top</a></p>
+    </div>
+</div>
+<div id="footer-wrapper">
+<ul class="footer">
+     <li class="footer"><a href="./tag/book.html">book&nbsp;&bull;&nbsp;</a></li>
+     <li class="footer"><a href="./tag/lesson.html">lesson&nbsp;&bull;&nbsp;</a></li>
+     <li class="footer"><a href="./tag/oge.html">oge</a></li>
+</ul><ul class="footer">
+    <li class="footer">&copy;&nbsp;2022&nbsp;::</li>
+    <li class="footer"><a href=".">ОГЭ 2023 информатика </a>&nbsp;::</li>
+</ul>
+</div></body>
+</html>
