@@ -153,22 +153,22 @@ print(z)          # печатаем ответ
 <p><img alt="pic" src="./images/evich2021-V20-Z15-3.png"></p>
 <h3>Пишем код:</h3>
 <pre><code class="py" style="font-size: 1.3em;">z = 0
+## Принимаем входные данные: -------------------------------------------------
+s = input()       # <strong>input()</strong>  вводит строку с клавиатуры: "5 7"
+x, n = s.split()  # <strong>split()</strong>  режет строку по пробелам:   "5 7"  ---->  "5","7"
 
-s = input()       <span style="color:green"># input вводит строку с клавиатуры: "5 7"</span>
-x, n = s.split()  <span style="color:green"># split режет строку по пробелам:   "5 7"  ---->  "5","7"</span>
-
-x = int(x)        <span style="color:green"># int преобразует строку в число:   "5"    ---->  5</span>
-n = int(n)        <span style="color:green"># int преобразует строку в число:   "7"    ---->  7</span>
-
-a = 1             <span style="color:green"># пусть у нас в переменной a будет  числитель  дроби</span>
-b = 1             <span style="color:green">#           а в переменной b будет знаменатель дроби</span>
-
-for i in range(1, n+1):     <span style="color:green">#  i:   1     2      3        4        ...</span>
-    a = x ** i              <span style="color:green">#  a:   x     xx     xxx      xxxx     ...</span>
-    b = b * i               <span style="color:green">#  b:   1     1*2    1*2*3    1*2*3*4  ...</span>
-    z = z + a / b           <span style="color:green">#  увеличиваем z на дробь (a / b)</span>
-
-z = round(z, 2)   <span style="color:green"># округляем z</span>
+x = int(x)        # <strong>int()</strong>  преобразует строку в число:   "5"    ---->  5
+n = int(n)        # <strong>int()</strong>  преобразует строку в число:   "7"    ---->  7
+## Вводим вспомогательные переменные: ----------------------------------------
+a = 1             # пусть у нас в переменной <strong>a</strong> будет  числитель  дроби
+b = 1             #           а в переменной <strong>b</strong> будет знаменатель дроби
+## Производим вычисления: ----------------------------------------------------
+for i in range(1, n+1):     #  <strong>i</strong>:   1     2      3        4        ...
+    a = x ** i              #  <strong>a</strong>:   x     xx     xxx      xxxx     ...
+    b = b * i               #  <strong>b</strong>:   1     1*2    1*2*3    1*2*3*4  ...
+    z = z + a / b           #  увеличиваем <strong>z</strong> на дробь (a / b)
+## Выводим результат: --------------------------------------------------------
+z = round(z, 2)   # округляем z
 print(z)
 </code></pre>
 
